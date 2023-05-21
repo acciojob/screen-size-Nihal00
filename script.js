@@ -1,6 +1,8 @@
-//your JS code here. If required.
-const screenWidth = window.innerWidth;
-const screenHeight = window.innerHeight;
+const sizeElemenet = document.createElement('h1');
 
-document.querySelector('h1').innerHTML = `Width: ${screenWidth} and Height: ${screenHeight}`;
+document.body.append(sizeElemenet);
 
+window.onresize = function () {
+	sizeElement.innerText = `Width: ${window.innerWidth} and Height: ${window.innerHeight}`;
+
+}
