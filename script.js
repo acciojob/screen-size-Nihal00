@@ -1,8 +1,16 @@
-const sizeElemenet = document.createElement('h1');
+// const sizeElemenet = document.createElement('h1');
 
-document.body.append(sizeElemenet);
+// document.body.append(sizeElemenet);
 
-window.onresize = function () {
-	sizeElement.innerText = `Width: ${window.innerWidth} and Height: ${window.innerHeight}`;
+// window.onresize = function () {
+// 	sizeElement.innerText = `Width: ${window.innerWidth} and Height: ${window.innerHeight}`;
 
+// }
+function getScreenSize() {
+	let width = window.innerWidth;
+	let height = window.innerHeight;
+	document.getElementById("screen-size").innerHTML = "Width: " + width + "and Height: " + height;
+	
 }
+
+window.addEventListener("resize", getScreenSize);
