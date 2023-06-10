@@ -7,8 +7,8 @@
 
 // }
 function getScreenSize() {
-	let width = win.innerWidth;
-	let height = win.innerHeight;
+	let width = window.innerWidth;
+	let height = window.innerHeight;
 	document.getElementById("sizeInfo").innerHTML = "Width " + width + " and Height " + height;
 }
 
