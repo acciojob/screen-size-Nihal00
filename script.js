@@ -6,6 +6,7 @@
 // 	sizeElement.innerText = `Width: ${window.innerWidth} and Height: ${window.innerHeight}`;
 
 // }
+
 function getScreenSize() {
 	let width = window.innerWidth;
 	let height = window.innerHeight;
